@@ -9,21 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('front/img/favicon.png') }}">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('front/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/gijgo.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -115,7 +115,7 @@
                     <div class="blog_left_sidebar">
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/single_blog_1.png" alt="">
+                                <img class="card-img rounded-0" src="{{ asset('front/img/blog/single_blog_1.png') }}" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
                                     <p>Jan</p>
@@ -137,7 +137,7 @@
 
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/single_blog_2.png" alt="">
+                                <img class="card-img rounded-0" src="{{ asset('front/img/blog/single_blog_2.png') }}" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
                                     <p>Jan</p>
@@ -159,7 +159,7 @@
 
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/single_blog_3.png" alt="">
+                                <img class="card-img rounded-0" src="{{ asset('front/img/blog/single_blog_3.png') }}" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
                                     <p>Jan</p>
@@ -181,7 +181,7 @@
 
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/single_blog_4.png" alt="">
+                                <img class="card-img rounded-0" src="{{ asset('front/img/blog/single_blog_4.png') }}" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
                                     <p>Jan</p>
@@ -203,7 +203,7 @@
 
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/single_blog_5.png" alt="">
+                                <img class="card-img rounded-0" src="{{ asset('front/img/blog/single_blog_5.png') }}" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
                                     <p>Jan</p>
@@ -309,7 +309,7 @@
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Recent Post</h3>
                             <div class="media post_item">
-                                <img src="img/post/post_1.png" alt="post">
+                                <img src="{{ asset('front/img/post/post_1.png') }}" alt="post">
                                 <div class="media-body">
                                     <a href="single-blog.html">
                                         <h3>From life was you fish...</h3>
@@ -318,7 +318,7 @@
                                 </div>
                             </div>
                             <div class="media post_item">
-                                <img src="img/post/post_2.png" alt="post">
+                                <img src="{{ asset('front/img/post/post_2.png') }}" alt="post">
                                 <div class="media-body">
                                     <a href="single-blog.html">
                                         <h3>The Amazing Hubble</h3>
@@ -327,7 +327,7 @@
                                 </div>
                             </div>
                             <div class="media post_item">
-                                <img src="img/post/post_3.png" alt="post">
+                                <img src="{{ asset('front/img/post/post_3.png') }}" alt="post">
                                 <div class="media-body">
                                     <a href="single-blog.html">
                                         <h3>Astronomy Or Astrology</h3>
@@ -336,7 +336,7 @@
                                 </div>
                             </div>
                             <div class="media post_item">
-                                <img src="img/post/post_4.png" alt="post">
+                                <img src="{{ asset('front/img/post/post_4.png') }}" alt="post">
                                 <div class="media-body">
                                     <a href="single-blog.html">
                                         <h3>Asteroids telescope</h3>
@@ -538,33 +538,33 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
+    <script src="{{ asset('front/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{{ asset('front/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{{ asset('front/js/popper.min.js') }}}"></script>
+    <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('front/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('front/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{asset('front/js/ajax-form.js')}}"></script>
+    <script src="{{ asset('front/js/waypoints.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('front/js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('front/js/scrollIt.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.scrollUp.min.js') }}"></script>
+    <script src="{{ asset('front/js/wow.min.js') }}"></script>
+    <script src="{{ asset('front/js/nice-select.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.slicknav.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('front/js/plugins.js') }}"></script>
+    <script src="{{ asset('front/js/gijgo.min.js') }}"></script>
 
     <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <script src="{{ asset('front/js/contact.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.form.js') }}"></script>
+    <script src="{{ asset('front/js/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('front/js/mail-script.js') }}"></script>
 
-    <script src="js/main.js"></script>
+    <script src="{{ asset('front/js/main.js') }}"></script>
     <script>
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',

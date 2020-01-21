@@ -8,6 +8,6 @@ class ArticleController extends Controller
 {
     // welcome
     public function welcome(){
-    	return view('welcome');
+    	return view('front.blog');
     }
 }

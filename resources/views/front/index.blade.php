@@ -9,22 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('front/img/favicon.png') }}">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="{{ asset('front/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('front/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/gijgo.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/slicknav.css') }}">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -43,7 +43,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo.png" alt="">
+                                        <img src="{{ asset('front/img/logo.png') }}" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="1s" data-wow-delay=".2s">
-            <img src="img/banner/illustration.png" alt="">
+            <img src="{{ asset('front/img/banner/illustration.png') }}" alt="">
         </div>
     </div>
     <!-- slider_area_end -->
@@ -286,7 +286,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/2.svg" alt="">
+                                    <img src="{{ asset('front/img/svg_icon/2.svg') }}" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Digital Marketer</h4></a>
@@ -315,7 +315,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/3.svg" alt="">
+                                    <img src="{{ asset('img/svg_icon/3.svg') }}" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Wordpress Developer</h4></a>
@@ -344,7 +344,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/4.svg" alt="">
+                                    <img src="{{ asset('front/img/svg_icon/4.svg') }}" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Visual Designer</h4></a>
@@ -373,7 +373,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/5.svg" alt="">
+                                    <img src="{{ asset('front/img/svg_icon/5.svg') }}" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Software Engineer</h4></a>
@@ -402,7 +402,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/1.svg" alt="">
+                                    <img src="{{ asset('front/img/svg_icon/1.svg') }}" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="job_details.html"><h4>Creative Designer</h4></a>
@@ -448,7 +448,7 @@
                     <div class="candidate_active owl-carousel">
                         <div class="single_candidates text-center">
                             <div class="thumb">
-                                <img src="img/candiateds/1.png" alt="">
+                                <img src="{{ asset('img/candiateds/1.png') }}" alt="">
                             </div>
                             <a href="#"><h4>Markary Jondon</h4></a>
                             <p>Software Engineer</p>
