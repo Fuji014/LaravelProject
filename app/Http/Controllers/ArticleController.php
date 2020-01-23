@@ -8,6 +8,12 @@ class ArticleController extends Controller
 {
     // welcome
     public function welcome(){
-    	return view('front.blog');
+    	$title = "welcome";
+    	return view('front.blog',compact('title'));
+    }
+    // dashboard
+    public function dashboard(){
+    	return view('back.index');
     }
 }
+
