@@ -17,7 +17,8 @@ Route::get('/admin/dashboard','ArticleController@dashboard')->name('dashboard');
 
 
 // Article
-Route::get('/admin/article','ArticleController@tableTest')->name('article');
+Route::get('/admin/article','ArticleController@article')->name('article');
+Route::get('/admin/article/postdata','ArticleController@tableTest')->name('articleData');
 Route::get('/admin/article/create','ArticleController@create')->name('articleCreate');
 Route::post('/admin/article','ArticleController@store')->name('articleStore');
 

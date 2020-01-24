@@ -14,6 +14,8 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('back/dist/css/adminlte.min.css') }}">
   <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="{{ asset('back/plugins/datatables-bs4/css/dataTables.bootstrap4.css') }}">
+ 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   @yield('stylesheet')
 </head>
@@ -68,6 +70,15 @@ to get the desired effect
 <script src="{{ asset('back/plugins/chart.js/Chart.min.js') }}"></script>
 <script src="{{ asset('back/dist/js/demo.js') }}"></script>
 <script src="{{ asset('back/dist/js/pages/dashboard3.js') }}"></script>
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery.js"></script>
+<!-- DataTables -->
+<script src="{{ asset('back/plugins/datatables/jquery.dataTables.js') }}"></script>
+
+<script src="{{ asset('back/plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
+
+@stack('scripts')
 @yield('jscript')
+
 </body>
 </html>

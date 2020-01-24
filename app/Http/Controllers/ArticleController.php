@@ -22,7 +22,7 @@ class ArticleController extends Controller
     	return view('back.index');
     }
 
-    public function articleIndex(){
+    public function article(){
 
     	return view('back.article');
     }
@@ -33,6 +33,8 @@ class ArticleController extends Controller
     // article store
     public function store(){ $article = new article_model;$article->title = request('title');$article->description = request('description');$article->author = request('author');if($article->save()) Session::flash('createFlash','Successfully Added!');return redirect()->route('article');
     }
+
+    
     
     // table test
     public function tableTest(){
