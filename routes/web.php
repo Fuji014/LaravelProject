@@ -14,3 +14,4 @@
 
 Route::get('/','ArticleController@welcome')->name('welcome');
 Route::get('/admin/dashboard','ArticleController@dashboard')->name('dashboard');
+Route::get('/admin/article','ArticleController@articleIndex')->name('article');

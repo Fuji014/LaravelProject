@@ -15,5 +15,14 @@ class ArticleController extends Controller
     public function dashboard(){
     	return view('back.index');
     }
+
+    public function articleIndex(){
+
+    	return view('back.article');
+    }
+
+    public function articledata(){
+    	
+    }	
 }
 
