@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\article_model;
+// use App\Http\Controllers\Session;
 
 class ArticleController extends Controller
 {
@@ -21,8 +23,22 @@ class ArticleController extends Controller
     	return view('back.article');
     }
 
-    public function articledata(){
+    public function create(){
+    	return view('back.articleCreate');
     	
     }	
+    public function store(){
+        $article = new article_model;
+        $article->title = request('title');
+        $article->description = request('description');
+        $article->author = request('author');
+        if($article->save()) Session::flash('createFlash','Successfully Added!');
+
+        return redirect()->route('articleCreate');
+
+
+    }
 }
+
+
 

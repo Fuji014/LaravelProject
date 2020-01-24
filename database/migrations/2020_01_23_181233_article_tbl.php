@@ -19,7 +19,7 @@ class ArticleTbl extends Migration
             $table->string('title');
             $table->text('description');
             $table->text('author');
-            $table->timestamp('created_at')->nullable();
+            $table->timestamps();
         });
     }
 
