@@ -12,14 +12,14 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Create Article</h1>
+            <h1 class="m-0 text-dark">Edit Article</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{ route('article') }}">Home</a></li>
               <li class="breadcrumb-item"><a href="{{ route('articleCreate') }}">Articles</a></li>
-              <li class="breadcrumb-item active">Create Articles</li>
-            </ol>e
+              <li class="breadcrumb-item active">Edit Articles</li>
+            </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -33,25 +33,26 @@
             <div class="col-lg-12">
               <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Article Create Form</h3>
+                <h3 class="card-title">Article Edit Form</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" id="articleCreateFormId" method="post" action="{{ route('articleStore') }}">
+              <form role="form" id="articleCreateFormId" method="post" action="{{ route('articleUpdate',$article->id) }}">
+                @method('PATCH')
                 @csrf
 
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleFormControlInput1">Title</label>
-                    <input type="text" class="form-control" id="articleTitleId" name="title" placeholder="Article title">
+                    <input type="text" class="form-control" id="articleTitleId" name="title" placeholder="Article title" value="{{ $article->title }}">
                   </div> 
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">Description</label>
-                    <textarea class="form-control" id="articleDescriptionId" rows="3" name="description" placeholder="Article Description"></textarea>
+                    <textarea class="form-control" id="articleDescriptionId" rows="3" name="description" placeholder="Article Description">{{ $article->description }}</textarea>
                   </div> 
                   <div class="form-group">
                     <label for="exampleFormControlInput1">Author</label>
-                    <input type="text" class="form-control" id="articleAuthorId" name="author" placeholder="Article Author">
+                    <input type="text" class="form-control" id="articleAuthorId" name="author" placeholder="Article Author" value="{{ $article->author }}">
                   </div> 
                 </div>
                 <!-- /.card-body -->
