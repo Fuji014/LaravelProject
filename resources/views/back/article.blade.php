@@ -27,8 +27,6 @@
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-
-    
       <div class="content">
       <div class="container-fluid">
         <div class="row">
@@ -99,7 +97,7 @@
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
       })
-      $.ajax({
+      $.ajax({ // ajax request for article delete
         url: '/admin/article/'+article_id,
         method: 'POST',
         beforeSend:function(){
@@ -114,8 +112,6 @@
       })
     })
     
-
-
     $('#userData').DataTable({ // article table
       processing: true,
         serverSide: true,

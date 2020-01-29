@@ -10,22 +10,53 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+    Route::view('/', 'welcome');
+    Auth::routes();
+
+    Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm');
+    Route::get('/login/writer', 'Auth\LoginController@showWriterLoginForm');
+    Route::get('/register/admin', 'Auth\RegisterController@showAdminRegisterForm');
+    Route::get('/register/writer', 'Auth\RegisterController@showWriterRegisterForm');
+
+    Route::post('/login/admin', 'Auth\LoginController@adminLogin');
+    Route::post('/login/writer', 'Auth\LoginController@writerLogin');
+    Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
+    Route::post('/register/writer', 'Auth\RegisterController@createWriter');
+
+    Route::view('/home', 'home')->middleware('auth');
+    Route::view('/admin', 'admin');
+    Route::view('/writer', 'writer');
+
+    Auth::routes();
+    Route::get('/home', 'HomeController@index')->name('home');
+
+/*
+| Front Controller
+*/
+
+Route::get('/dashbord','FrontDashboardController@dashboard')->name('FrontDashboard');
+
+
+
+/*
+| Back Controller
+*/
 
 // dashboard
-
-Route::get('/','ArticleController@welcome')->name('welcome');
-Route::get('/admin/dashboard','ArticleController@dashboard')->name('dashboard');
+Route::get('/admin/dashboard','AdminDashboardController@dashboard')->name('AdminDashboard');
 
 // Article
-Route::get('/admin/article','ArticleController@article')->name('article');
-Route::get('/admin/article/postdata','ArticleController@articleTable')->name('articleData');
-Route::get('/admin/article/create','ArticleController@create')->name('articleCreate');
-Route::post('/admin/article','ArticleController@store')->name('articleStore');
-Route::get('/admin/article/edit/{id}','ArticleController@edit')->name('articleEdit');
-Route::patch('/admin/article/{id}','ArticleController@update')->name('articleUpdate');
-Route::post('/admin/article/{id}','ArticleController@destroy')->name('articleDelete');
+Route::get('/admin/article','AdminArticleController@article')->name('article');
+Route::get('/admin/article/postdata','AdminArticleController@articleTable')->name('articleData');
+Route::get('/admin/article/create','AdminArticleController@create')->name('articleCreate');
+Route::post('/admin/article','AdminArticleController@store')->name('articleStore');
+Route::get('/admin/article/edit/{id}','AdminArticleController@edit')->name('articleEdit');
+Route::patch('/admin/article/{id}','AdminArticleController@update')->name('articleUpdate');
+Route::post('/admin/article/{id}','AdminArticleController@destroy')->name('articleDelete');
+
+// Settings
+Route::get('/admin/settings','AdminSettingsController@settings')->name('settings');
 
 
-// 
 
 

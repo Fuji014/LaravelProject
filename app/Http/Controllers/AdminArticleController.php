@@ -8,7 +8,7 @@ use DataTables;
 
 use Session;  
 
-class ArticleController extends Controller{ // article controller
+class AdminArticleController extends Controller{ // article controller
 
     public function article(){ // article dashboard
     	return view('back.article');

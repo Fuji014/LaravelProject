@@ -14,7 +14,7 @@
           <img src="{{ asset('back/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Jade Conception</a>
         </div>
       </div>
 
@@ -39,9 +39,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="{{ route('settings') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Reports</p>
+                  <p>settings</p>
                 </a>
               </li>
               <li class="nav-item">
